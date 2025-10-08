@@ -1,0 +1,12 @@
+speechrecognition
+pyttsx3
+wikipedia
+pywhatkit
+pyaudio
+requests
+python-dotenv
+pyjokes
+cohere
+python-dotenv
+
+
