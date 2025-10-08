@@ -1,6 +1,9 @@
 # core/brain.py
+<<<<<<< HEAD
 
 from core.cohere_ai import get_cohere_response
+=======
+>>>>>>> 1aa8b79ee4bf33f11bfd95442c2502c5f50276b2
 import skills.time_date as time_date
 import skills.wikipedia_search as wikipedia_search
 import skills.web_search as web_search
@@ -44,6 +47,10 @@ def process_command(query: str):
 
     # ✅ Web search / YouTube
     elif "play" in query and "youtube" in query:
+<<<<<<< HEAD
+=======
+        # Extract song name
+>>>>>>> 1aa8b79ee4bf33f11bfd95442c2502c5f50276b2
         song_name = query.replace("play", "").replace("on youtube", "").strip()
         if song_name:
             web_search.play_youtube_song(song_name)
@@ -66,18 +73,34 @@ def process_command(query: str):
     elif "news" in query:
         return news.get_news()
 
+<<<<<<< HEAD
     elif any(k in query for k in ("note down", "take a note", "write note", "remind")):
         return notes.manage_notes(query)
+=======
+    elif "note" in query:
+        return notes.take_note()
+>>>>>>> 1aa8b79ee4bf33f11bfd95442c2502c5f50276b2
 
     elif "email" in query:
         return emailer.send_email()
 
+<<<<<<< HEAD
     elif any(k in query for k in ("shutdown", "restart", "lock", "open app", "open notepad", "open calculator", "open brave", "open chrome", "open vscode")):
         return system_control.system_control(query)
+=======
+    elif "shutdown" in query or "restart" in query:
+        return system_control.system_action(query)
+>>>>>>> 1aa8b79ee4bf33f11bfd95442c2502c5f50276b2
 
     elif "joke" in query or "fun" in query:
         return fun.tell_joke()
 
+<<<<<<< HEAD
     # ✅ Fallback to Cohere AI
     else:
         return get_cohere_response(query)
+=======
+    # ✅ Fallback response
+    else:
+        return "Sorry, I didn’t understand that. Can you repeat?"
+>>>>>>> 1aa8b79ee4bf33f11bfd95442c2502c5f50276b2

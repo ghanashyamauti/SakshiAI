@@ -6,7 +6,10 @@ pyaudio
 requests
 python-dotenv
 pyjokes
+<<<<<<< HEAD
 cohere
 python-dotenv
+=======
+>>>>>>> 1aa8b79ee4bf33f11bfd95442c2502c5f50276b2
 
 

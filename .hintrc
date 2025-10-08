@@ -9,6 +9,7 @@
         "image-alt": "off"
       }
     ],
+<<<<<<< HEAD
     "meta-viewport": "off",
     "no-inline-styles": "off",
     "axe/name-role-value": [
@@ -17,5 +18,8 @@
         "button-name": "off"
       }
     ]
+=======
+    "meta-viewport": "off"
+>>>>>>> 1aa8b79ee4bf33f11bfd95442c2502c5f50276b2
   }
 }
