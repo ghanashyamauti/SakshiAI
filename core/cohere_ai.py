@@ -10,7 +10,7 @@ co = cohere.Client(COHERE_API_KEY)
 def get_cohere_response(query: str) -> str:
     try:
         response = co.chat(
-            model="command-r-plus-08-2025",  # ✅ new model name
+            model="command-r7b-12-2024",  # ✅ new model name
             message=query
         )
         return response.text
